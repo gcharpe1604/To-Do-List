@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Todo List</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><h1 id="topHeading">To-Do List</h1></header><br>
+  <div id="container">
+    <h2>Add Task</h2>
+    <section id="addtask">
+      <form id="activity" name="Enter a new activity">
+          <label class="text" for="activity">Enter a new task:</label>
+          <br>
+          <input type="text" id="taskInput" placeholder="Enter a new task">
+      </form><br>
+      <div id="calender">
+          <label class="text" for="date">Enter date:</label>
+          <label id="text" for="time">Enter time:</label>
+          <form id="datetime" name="Enter date & time">
+            <input type="date" id="dueDateInput" placeholder="Enter date">
+            <input type="time" id="dueTimeInput" placeholder="Enter time">
+          </form>
+          <br>
+      </div>
+      <form id="priority" name="Enter Priority">
+          <label class="text" for="priority">Enter Priority:</label>
+          <br>
+          <select id="prioritySelect">
+            <option value="Select Priority">Select Priority</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+      </form>
+      <br>
+      <button id="addTaskBtn">Add</button>
+      <br>
+      <button id="resetBtn">Reset</button>
+      <br>
+      <button id="darkModeBtn">Change Theme</button>
+      <br>
+    </section>
+  </div>
+  <div id="list">
+    <h2>Your Task</h2>
+    <ul id="taskList">
+    </ul>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>

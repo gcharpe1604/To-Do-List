@@ -1,0 +1,257 @@
+html, body {
+    height: 100%;
+}
+body {
+    background: linear-gradient(135deg, #cfc661, #8692b6);
+    color: #111;
+    transition: background 0.3s, color 0.3s;
+}
+body.dark-mode {
+  background: linear-gradient(135deg, #000000, #141414); /* Optional gradient */;
+}
+h1 {
+    text-align: center;
+    color: #2c2c2c;
+    font-family: Poppins, sans-serif;
+    font-size: 2.45em;
+    font-weight: 550; 
+    background: lightblue;
+    padding: 0.45em;
+    border-bottom: 0.05em solid #2c2c2c;
+    margin-top: -0.6%;
+    margin-left: -0.5%;
+    margin-right: -0.5%;
+}
+#container {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 2em;
+    padding: 1em;
+    height: 33.5em;
+    width: 40em;
+    float: left;
+    margin-left: 4%;
+    margin-top: -0.4%;
+}
+#list {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 2em;
+    float: right;
+    padding: 1em;
+    height: 33.5em;
+    width: 40em;
+    float: right;
+    margin-right: 4%;
+    margin-top: -0.4%;
+    overflow-y: auto;
+}
+#list ::-webkit-scrollbar {
+    width: 10px;
+    margin-right: 16%;
+}
+#list ::-webkit-scrollbar-thumb {
+    background: darkgrey;
+    border-radius: 5px;
+}
+h2 {
+    text-align: center;
+    color: #2c2c2c;
+    font-family: Poppins, sans-serif;
+    font-size: 1.65em;
+    padding: 0.45em;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 2.0em;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+#addtask {
+    font-family: Poppins, sans-serif;
+    font-size: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2em;
+}
+#text {
+    margin-left: 35%;
+    margin-right: 10%;
+}
+input[type="text"] {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    width: 95%;
+    border: none;
+    border-radius: 0.85em;
+    padding: 0.425em;
+    margin-top: 0.5em;
+    font-size: 1.1em;
+}
+input[type="time"] {
+    font-family: Poppins, sans-serif;
+    margin-left: 2.75%;
+    text-align: center;
+    width: 44%;
+    border: none;
+    border-radius: 0.85em;
+    padding: 0.4em;
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+input[type="date"] {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    width: 44%;
+    border: none;
+    border-radius: 0.85em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+select {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    width: 98%;
+    border: none;
+    border-radius: 0.85em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+#addTaskBtn {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1em;
+    background: rgb(62, 188, 62);
+    border: none;
+    padding: 0.5em;
+    border-radius: 1em;
+    width: 60%;
+    margin-left: 18%;
+    margin-top: 2%;
+}
+#resetBtn {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1em;
+    background: red;
+    border: none;
+    padding: 0.5em;
+    border-radius: 1em;
+    width: 60%;
+    margin-left: 18%;
+    margin-top: 3%;
+}
+#darkModeBtn {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1em;
+    background: rgb(140, 35, 35);
+    border: none;
+    padding: 0.5em;
+    border-radius: 1em;
+    width: 60%;
+    margin-left: 18%;
+    margin-top: 3%;
+}
+#addTaskBtn:hover {
+    font-family: Poppins, sans-serif;
+    background-color: rgb(1, 181, 1);
+}
+#addTaskBtn:active {
+    font-family: Poppins, sans-serif;
+    background-color: rgb(0, 111, 0);
+}
+#resetBtn:hover {
+    font-family: Poppins, sans-serif;
+    background-color: rgb(187, 0, 0);
+}
+#resetBtn:active {
+    font-family: Poppins, sans-serif;
+    background-color: rgb(122, 0, 0);
+}
+#darkModeBtn:hover {
+    font-family: Poppins, sans-serif;
+    background-color: rgb(107, 28, 28);
+}
+#darkModeBtn:active {
+    font-family: Poppins, sans-serif;
+    background-color: rgb(88, 20, 20);
+}
+li.done {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.task-content {
+    font-family: poppins, sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  word-break: break-word;
+  float: left;
+  margin-left: 0%;
+  margin-top: -5%;
+}
+.task-date {
+    font-family: Poppins, sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+  float: left;
+  margin-left: 0%;
+  margin-top: 2%;
+}
+.task-icon {
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-top: -2.5%;
+}
+ul {
+    list-style-type: none;
+    margin-right: 5%;
+}
+#taskList {
+  max-height: 25em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.625em;
+  box-sizing: border-box;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+#taskList li {
+    border-radius: 2.0em;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    align-items: center;
+    text-align: center;
+    padding: 2.2em;
+    margin-top: 0.5em;
+}
+h1.change-theme {
+    color: #2c2c2c;
+    background-color: rgb(255, 192, 74);
+    border-bottom: 0.05em solid #818181;
+
+}
+input.change-input {
+    color: whitesmoke;
+    background-color: rgb(48, 48, 48);
+}
+select.change-input {
+    color: whitesmoke;
+    background-color: rgb(48, 48, 48);
+}
