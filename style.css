@@ -1,10 +1,11 @@
 html, body {
-    height: 100%;
+    height: 124%;
 }
 body {
     background: linear-gradient(135deg, #cfc661, #8692b6);
     color: #111;
     transition: background 0.3s, color 0.3s;
+    background-repeat: repeat;
 }
 body.dark-mode {
   background: linear-gradient(135deg, #000000, #141414); /* Optional gradient */;
@@ -16,11 +17,13 @@ h1 {
     font-size: 2.45em;
     font-weight: 550; 
     background: lightblue;
-    padding: 0.45em;
-    border-bottom: 0.05em solid #2c2c2c;
-    margin-top: -0.6%;
-    margin-left: -0.5%;
-    margin-right: -0.5%;
+    padding: 0.3em;
+    border: 0.05em solid #2c2c2c;
+    border-radius: 2em;
+    justify-self: normal;
+    margin-top: -0.1%;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 #container {
     background: rgba(255, 255, 255, 0.6);
@@ -29,11 +32,10 @@ h1 {
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 2em;
     padding: 1em;
-    height: 33.5em;
-    width: 40em;
-    float: left;
-    margin-left: 4%;
-    margin-top: -0.4%;
+    height: 40.85%;
+    width: 32%;
+    justify-self: center;
+    margin-top: -2%;
 }
 #list {
     background: rgba(255, 255, 255, 0.6);
@@ -41,13 +43,11 @@ h1 {
     box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 2em;
-    float: right;
     padding: 1em;
-    height: 33.5em;
-    width: 40em;
-    float: right;
-    margin-right: 4%;
-    margin-top: -0.4%;
+    justify-self: center;
+    height: 40.85%;
+    width: 32%;
+    margin-top: 0.2%;
     overflow-y: auto;
 }
 #list ::-webkit-scrollbar {
@@ -63,7 +63,8 @@ h2 {
     color: #2c2c2c;
     font-family: Poppins, sans-serif;
     font-size: 1.65em;
-    padding: 0.45em;
+    padding: 0.35em;
+    margin-top : -0%;
     margin-left: 30%;
     margin-right: 30%;
     border-radius: 2.0em;
@@ -198,7 +199,7 @@ li.done {
   word-break: break-word;
   float: left;
   margin-left: 0%;
-  margin-top: -5%;
+  margin-top: -6%;
 }
 .task-date {
     font-family: Poppins, sans-serif;
@@ -206,7 +207,7 @@ li.done {
   color: #555;
   float: left;
   margin-left: 0%;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 .task-icon {
   cursor: pointer;
