@@ -256,6 +256,20 @@ select.change-input {
     color: whitesmoke;
     background-color: rgb(48, 48, 48);
 }
+#change.change-label {
+    color: whitesmoke;
+    background: rgba(50, 50, 50, 0.6);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+#change1.change-label {
+    color: whitesmoke;
+    background: rgba(50, 50, 50, 0.6);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
 /* ... existing CSS remains unchanged ... */
 
 /* === Responsive Design for Mobile Devices === */

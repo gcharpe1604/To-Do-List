@@ -8,6 +8,8 @@ const darkModeBtn = document.getElementById('darkModeBtn');
 const taskList = document.getElementById('taskList');
 const body = document.body;
 const h1 = document.querySelector('h1');
+const change = document.getElementById('change');
+const change1 = document.getElementById('change1');
 
 
 //Input Task
@@ -101,5 +103,6 @@ darkModeBtn.addEventListener('click', function() {
     dueDateInput.classList.toggle('change-input');
     dueTimeInput.classList.toggle('change-input');
     prioritySelect.classList.toggle('change-input');
-    text.classList.toggle('change-label');
+    change.classList.toggle('change-label');
+    change1.classList.toggle('change-label');
 });
