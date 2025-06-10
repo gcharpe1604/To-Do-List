@@ -256,3 +256,50 @@ select.change-input {
     color: whitesmoke;
     background-color: rgb(48, 48, 48);
 }
+/* ... existing CSS remains unchanged ... */
+
+/* === Responsive Design for Mobile Devices === */
+@media (max-width: 768px) {
+  h1, h2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.5em;
+  }
+
+  #container, #list {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  input[type="text"],
+  input[type="time"],
+  input[type="date"],
+  select,
+  #addTaskBtn,
+  #resetBtn,
+  #darkModeBtn {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1em;
+  }
+
+  .task-content, .task-date {
+    float: none;
+    text-align: center;
+    margin: 0.5em 0;
+  }
+
+  .task-icon {
+    float: none;
+    justify-content: center;
+    margin: 0.5em auto;
+    display: flex;
+  }
+
+  #taskList li {
+    padding: 1.5em;
+  }
+}
