@@ -70,7 +70,7 @@ addTaskBtn.addEventListener('click', function () {
     const priority = prioritySelect.value;
 
     if (taskText === '' || dueDate === '' || dueTime === '' || priority === 'Priority Select') {
-        alert('Please enter all fields');
+        alert('Please enter in all fields');
         return;
     }
 
