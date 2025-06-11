@@ -198,15 +198,15 @@ li.done {
   font-size: 1.1rem;
   word-break: break-word;
   float: left;
-  margin-left: 0%;
-  margin-top: -6%;
+  margin-left: -2%;
+  margin-top: -7%;
 }
 .task-date {
     font-family: Poppins, sans-serif;
   font-size: 0.9rem;
   color: #555;
   float: left;
-  margin-left: 0%;
+  margin-left: -2%;
   margin-top: 3%;
 }
 .task-icon {
